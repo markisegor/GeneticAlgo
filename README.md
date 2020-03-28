@@ -1,11 +1,7 @@
 # GeneticAlgo
 GeneticAlgo
 
-Performed by our Dream Team
-Will be
-i hope ..
-
-╰(▔∀▔)╯
+Performed by our Dream Team. Will be.. I hope ... ╰(▔∀▔)╯
 
 
 
