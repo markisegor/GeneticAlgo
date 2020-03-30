@@ -34,7 +34,7 @@ vector<int> TaskGeneration(int dim, int density) {
     return task;
 }
 
-vector<vector<bool>> PoulationGeneration(int PopSize, int dim) {
+vector<vector<bool>> PopulationGeneration(int PopSize, int dim) {
     // TODO VANES
 }
 
