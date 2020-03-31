@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <ctime>
+#include <math.h>
 
 #define PopSize 10
 #define ChromoDim 10
