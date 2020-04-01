@@ -126,15 +126,37 @@ vector<bool> Mutation(vector<bool> Generation) {
 }
 
 
-void GeneticAlgo(vector<int> Task) {
-    //TODO VANES
-}
+void GeneticAlgo(vector<int> Task, int PSize, int dim, int NumIterations) {
+
+    vector<vector<bool>> population = PoulationGeneration(PSize, dim);
+
+	for (int i = 0; i < NumIterations; ++i) {
+
+		population = Selection(population);
+		population = Crossingover(population);
+		population = Mutation(population);
+
+		int fit_value = 0;
+
+		// выбор лучшей хромосомы по фитнес функции
+		for (auto chromo : population) {
+			if (FitnessFunction(chromo) > fit_value) {
+
+				fit_value = FitnessFunction(chromo);
+				
+				// проверка критерия выхода
+				if (false) {
+					break;
+				}
+			}
+
+		}
+
+		
+
+	}
 
 
-void DynamicAlgo(vector<int> Task) {
-    /*
-    TODO AZA
-    */
 }
 
 
