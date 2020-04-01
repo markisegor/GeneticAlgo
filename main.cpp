@@ -77,7 +77,7 @@ vector<vector<bool>> Selection(vector<vector<bool>>& Generation)
 }
 
 
-vector<bool> Crossingover(vector<vector<bool>>& Generation)
+vector<vector<bool>> Crossingover(vector<vector<bool>>& Generation)
 {
 	// TODO DIMA
 	RAND_MAX = Generation.size() - 1;
