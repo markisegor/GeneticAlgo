@@ -44,7 +44,7 @@ vector<vector<bool>> PoulationGeneration(int PSize, int dim) {
 }
 
 
-int FitnessFunction(vector<bool> X) {
+int FitnessFunction(vector<bool> X, vector<int> Weights) {
     // TODO AKELLA
 }
 
