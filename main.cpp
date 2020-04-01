@@ -3,6 +3,7 @@
 #include <vector>
 #include <ctime>
 #include <math.h>
+#include <time.h>
 
 #define PopSize 10
 #define ChromoDim 10
@@ -32,7 +33,7 @@ vector<int> TaskGeneration(int dim, int D) {
 vector<vector<bool>> PoulationGeneration(int PSize, int dim) {
     /*generate a random population of chromosomes*/
 
-    srand(time(0));
+    srand(clock());
     vector<vector<bool>> Pop(PSize);
 
     for (auto Сhromo : Pop) {
@@ -126,22 +127,7 @@ vector<bool> Mutation(vector<bool> Generation) {
 
 
 void GeneticAlgo(vector<int> Task) {
-    
-    unsigned int start_time =  clock();
-
-    //генерация начальной популяцции
-    vector<vector<bool>> InitPop = PoulationGeneration(PopSize, ChromoDim);
-
-    for (int i = 0; i < NumIterations; ++i) {
-
-        if (/*validate on exit*/) {
-            //
-        }
-    }
-    
-    unsigned int end_time = clock();
-    unsigned int work_time = end_time - start_time;
-    
+    //TODO VANES
 }
 
 
